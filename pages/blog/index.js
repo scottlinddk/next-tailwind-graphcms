@@ -1,7 +1,5 @@
-import Link from 'next/link';
 import { GraphQLClient } from 'graphql-request';
 import BlogPreview from '../../components/blog/BlogPreview';
-
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
