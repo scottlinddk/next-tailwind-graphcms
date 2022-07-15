@@ -3,7 +3,7 @@ import Logo from './Logo'
 
 const Navbar = () => {
   return (
-    <header className="bg-white">
+    <header className="bg-transparent fixed top-0 left-0 right-0 z-50">
       <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-1 md:flex md:items-center md:gap-12">

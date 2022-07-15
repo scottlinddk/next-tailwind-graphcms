@@ -12,6 +12,7 @@ export async function getStaticProps() {
           id
           hero {
             heading
+            heroText
             image {
               id
               url
@@ -42,7 +43,6 @@ export default function index ({ homepage }) {
     <>
       <Head>
         <title>Scott Lind | Home</title>
-        <meta name="keywords" content="Scott Lind | Frontendudvikler - Aalborg"/>
       </Head>
       <Hero hero={homepage.hero} />
     </>

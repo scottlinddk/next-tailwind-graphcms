@@ -8,3 +8,28 @@
 canvas{
     height: 500px;
 }
+::-moz-selection {
+    background:rgba(34, 170, 153, 0.32) 0%;
+    color: #000;
+}
+
+::selection {
+    background: rgba(34, 170, 153, 0.32) 0%;
+    color: #000;
+}
+
+html {
+    background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.blob-1, .blob-2, .blob-3 {
+}
+.blob-1 {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(204, 221, 51, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.blob-2 {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(34, 170, 153, 0.32) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.blob-3 {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(85, 204, 255, 0.25) 0%, rgb(57 44 44 / 0%) 100%);
+}
