@@ -11,14 +11,12 @@ const Navbar = () => {
           </div>
           <div className="md:flex md:items-center md:gap-12">
             <nav className="hidden md:block" aria-labelledby="header-navigation">
-              <h2 className="sr-only" id="header-navigation">Header navigation</h2>
-
+              <h2 className="sr-only" id="header-navigation">Navigation</h2>
               <ul className="flex items-center gap-6 text-sm">
                 <li>
                   <Link href="/projekter">
                     <a
                       className="text-gray-800 transition hover:text-gray-800/75"
-                      href="/"
                     >
                       Projekter
                     </a>
@@ -28,7 +26,6 @@ const Navbar = () => {
                   <Link href="/om-mig">
                     <a
                       className="text-gray-800 transition hover:text-gray-800/75"
-                      href="/"
                     >
                       Om mig
                     </a>
@@ -38,7 +35,6 @@ const Navbar = () => {
                   <Link href="/blog">
                     <a
                       className="text-gray-800 transition hover:text-gray-800/75"
-                      href="/"
                     >
                       Blog
                     </a>
@@ -48,7 +44,6 @@ const Navbar = () => {
                   <Link href="/kontakt">
                     <a
                       className="text-gray-800 transition hover:text-gray-800/75"
-                      href="/"
                     >
                       Kontakt
                     </a>
