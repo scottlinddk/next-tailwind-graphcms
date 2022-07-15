@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { GraphQLClient } from 'graphql-request';
 import Hero from '../components/Hero';
 
-const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT)
+const graphcms = new GraphQLClient(process.env.GRAPHCMS_URL_ENDPOINT)
 export async function getStaticProps() {
   try {
     const query = `

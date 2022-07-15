@@ -6,7 +6,6 @@ import '../styles/globals.css'
 
 export default function MyApp({ Component, pageProps, router }) {
   const routerKey = router._key
-
   const pageAnimations = {
     initial: {
       opacity: 0,
