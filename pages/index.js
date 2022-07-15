@@ -37,13 +37,15 @@ export async function getStaticProps() {
   }
 }
 
-export default ({ homepage }) => (
-  <>
-    <Head>
-      <title>Scott Lind | Home</title>
-      <meta name="keywords" content="Scott Lind | Frontendudvikler - Aalborg"/>
-    </Head>
-    <Hero hero={homepage.hero} />
-  </>
-)
+export default function index ({ homepage }) {
+  return (
+    <>
+      <Head>
+        <title>Scott Lind | Home</title>
+        <meta name="keywords" content="Scott Lind | Frontendudvikler - Aalborg"/>
+      </Head>
+      <Hero hero={homepage.hero} />
+    </>
+  )
+}
 
