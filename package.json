@@ -12,6 +12,7 @@
     "@react-three/drei": "^9.17.0",
     "@react-three/fiber": "^8.0.27",
     "framer-motion": "^6.3.16",
+    "graphql": "^16.5.0",
     "graphql-request": "^4.3.0",
     "next": "12.2.0",
     "react": "18.2.0",
