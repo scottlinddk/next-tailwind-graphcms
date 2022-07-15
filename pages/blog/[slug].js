@@ -51,8 +51,10 @@ export async function getStaticPaths() {
   };
 }
 
-export default ({ post, params }) => (
-  <article>
-    <h1>{post.title}</h1>
-  </article>
-);
+export default function Post ({ post }) {
+  return (
+    <article>
+      <h1>{post.title}</h1>
+    </article>
+  )
+};

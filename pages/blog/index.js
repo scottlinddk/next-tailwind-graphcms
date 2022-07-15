@@ -27,9 +27,12 @@ export async function getStaticProps() {
   };
 }
 
-export default ({ posts }) => 
-  posts.map((blog) => (
-    <BlogPreview blog={blog} key={blog.id} />
-  ));
+export default function postIndex ({ posts }) {
+  return (
+    posts.map((blog) => (
+      <BlogPreview blog={blog} key={blog.id} />
+    ))
+  )
+} 
 
 
