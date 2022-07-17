@@ -46,7 +46,7 @@ export default function MyApp({ Component, pageProps, router }) {
           animate="animate"
           exit="exit"
           transition={{duration: 1}}
-          className="relative bg-gray-50"
+          className="relative pt-16"
           >
             <Component {...pageProps} key={routerKey} />
           </motion.main>

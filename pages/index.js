@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Head from 'next/head'
 import { GraphQLClient } from 'graphql-request';
 import Hero from '../components/Hero';
+import Temporary from '../components/Temporary';
 
 const graphcms = new GraphQLClient(process.env.GRAPHCMS_URL_ENDPOINT)
 export async function getStaticProps() {
@@ -48,6 +49,7 @@ export default function index ({ homepage }) {
         <title>Scott Lind | Home</title>
       </Head>
       <Hero hero={homepage.hero} />
+      <Temporary />
     </>
   )
 }
