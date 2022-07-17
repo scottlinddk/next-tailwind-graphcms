@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import Section from '/components/Layout/Tags/Section';
 import Span from '/components/Layout/Tags/Span';
@@ -55,7 +56,12 @@ export default function Hero({ hero }) {
         </div>
         <section id="intro">
           <div className="flex flex-col items-center justify-center pt-24 mx-auto rounded-lg lg:px-10 max-w-7xl">
-            <img className="object-cover object-center w-full rounded-xl h72" alt="hero" src="https://source.unsplash.com/random/?city,night" />
+            <Image className="object-cover object-center w-full rounded-xl h72" 
+              src="https://source.unsplash.com/random/?city,night"
+              alt="hero" 
+              width={500}
+              height={500}
+            />
           </div>
         </section>
     </Section>
