@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import Section from '/components/Layout/Tags/Section';
