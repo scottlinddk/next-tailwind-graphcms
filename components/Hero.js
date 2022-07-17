@@ -31,9 +31,9 @@ export default function Hero({ hero }) {
 
   return (
     <Section>
-       <div className="absolute top-0 rounded-full w-72 h-72 left-1/4 w-128 h-128 mix-blend-multiply filter blur-xl opacity-70 animate-blob blob-1"></div>
-        <div className="absolute top-0 rounded-full w-72 h-72 left-37 w-128 h-128 mix-blend-multiply filter blur-xl opacity-70 animate-blob blob-2"></div>
-        <div className="absolute top-0 rounded-full w-72 h-72 left-1/2 w-128 h-128 mix-blend-multiply filter blur-xl opacity-70 animate-blob blob-3"></div>
+       <div className="absolute top-0 rounded-full w-40 h-40 left-1/4 md:w-128 md:h-128 mix-blend-multiply filter blur-xl opacity-70 animate-blob blob-1"></div>
+        <div className="absolute top-0 rounded-full w-40 h-40 left-37 md:w-128 md:h-128 mix-blend-multiply filter blur-xl opacity-70 animate-blob blob-2"></div>
+        <div className="absolute top-0 rounded-full w-40 h-40 left-1/2 md:w-128 md:h-128 mix-blend-multiply filter blur-xl opacity-70 animate-blob blob-3"></div>
         <div className="flex w-full mx-auto text-left">
           <div className="relative inline-flex items-center mx-auto align-middle">
             <div className="text-center">
