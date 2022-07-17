@@ -40,12 +40,12 @@ export async function getStaticProps() {
   }
 }
 
-export default function index ({ homepage }) {
+export default function about ({ homepage }) {
   console.log(homepage)
   return (
     <>
       <Head>
-        <title>Scott Lind | Home</title>
+        <title>Scott Lind | Om mig</title>
       </Head>
       <Hero hero={homepage.hero} />
     </>

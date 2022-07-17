@@ -1,4 +1,5 @@
 import { GraphQLClient } from 'graphql-request';
+import Section from '../../components/Layout/Tags/Section';
 
 const graphcms = new GraphQLClient(
   process.env.GRAPHCMS_URL_ENDPOINT,
@@ -53,8 +54,10 @@ export async function getStaticPaths() {
 
 export default function Post ({ post }) {
   return (
-    <article>
-      <h1>{post.title}</h1>
-    </article>
+    <Section>
+      <article>
+        <h1>{post.title}</h1>
+      </article>
+    </Section>
   )
 };

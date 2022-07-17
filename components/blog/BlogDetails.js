@@ -1,9 +1,11 @@
+import Section from '../Layout/Tags/Section';
+
 export default function BlogDetails({ blog }) {
   return (
-    <section>
+    <Section>
       <h1>
-        {blog.heading}
+        {blog.heading} test
       </h1>
-    </section>
+    </Section>
   );
 }

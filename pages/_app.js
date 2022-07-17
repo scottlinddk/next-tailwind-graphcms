@@ -1,25 +1,25 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import Head from 'next/head'
 import Layout from '../components/Layout/Layout'
-import '../styles/globals.css'
+import '../styles/globals.scss'
 
 
 
 export default function MyApp({ Component, pageProps, router }) {
   const routerKey = router._key
-  console.log(router);
+
   const pageAnimations = {
     initial: {
       opacity: 0,
-      x: 100
+      y: 100
     },
     animate: {
       opacity: 1,
-      x: 0
+      y: 0
     },
     exit: {
       opacity: 0,
-      x: -100
+      y: -100
     }
   }
 
@@ -45,7 +45,7 @@ export default function MyApp({ Component, pageProps, router }) {
           initial="initial" 
           animate="animate"
           exit="exit"
-          transition={{duration: 0.5}}
+          transition={{duration: 1}}
           className="relative bg-gray-50"
           >
             <Component {...pageProps} key={routerKey} />

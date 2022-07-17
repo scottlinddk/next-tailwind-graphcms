@@ -33,3 +33,19 @@ html {
 .blob-3 {
     background: radial-gradient(50% 50% at 50% 50%, rgba(85, 204, 255, 0.25) 0%, rgb(57 44 44 / 0%) 100%);
 }
+/* class="bg-transparent fixed top-0 left-0 right-0 z-50"  */
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: background-color .25s ease-in-out;
+    &.active {
+        background: rgba( 255, 255, 255, 0.95 );
+        box-shadow: 0 -1px 24px 0 rgb(1 1 4 / 10%);
+        backdrop-filter: blur( 0px );
+        -webkit-backdrop-filter: blur( 0px );
+    }
+}

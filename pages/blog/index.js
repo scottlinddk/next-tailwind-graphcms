@@ -1,10 +1,10 @@
 import { GraphQLClient } from 'graphql-request';
 import BlogPreview from '../../components/blog/BlogPreview';
+import Section from '../../components/Layout/Tags/Section';
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
     process.env.GRAPHCMS_URL_ENDPOINT
-    // 'https://api-eu-central-1.graphcms.com/v2/cl4dxlaps78ve01w8alkh1bhl/master'
   );
 
   const { posts } = await graphcms.request(
@@ -29,10 +29,12 @@ export async function getStaticProps() {
 
 export default function postIndex ({ posts }) {
   return (
-    posts.map((blog) => (
-      <BlogPreview blog={blog} key={blog.id} />
-    ))
+    <Section>
+      {posts && posts.length > 0 && posts.map(blog => {
+        return (
+          <BlogPreview blog={blog} key={blog.id} />
+        );
+      })}
+    </Section>
   )
 } 
-
-
