@@ -46,7 +46,7 @@ export default function Hero({ hero }) {
             </div>
           </div>
         </div>
-        <section id="intro">
+        {/* <section id="intro">
           <div className="flex flex-col items-center justify-center pt-24 mx-auto rounded-lg lg:px-10 max-w-7xl">
             {/* <Image className="object-cover object-center w-full rounded-xl h72" 
               src="https://source.unsplash.com/random/?city,night"
@@ -54,8 +54,8 @@ export default function Hero({ hero }) {
               width={800}
               height={500}
             /> */}
-          </div>
-        </section>
+          {/* </div> */}
+        {/* </section>  */}
     </Section>
   );
 }
